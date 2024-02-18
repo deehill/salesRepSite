@@ -1,0 +1,86 @@
+potential/test main navBar
+
+--more or less matches the file
+ site22aa_layout_of_landingpage_based_on_github.dat
+ --for the navBar..
+
+the userReferralViral process requires the user to be able to access the different 
+ sections/areas of the site.
+-the idea is to have a main "Horizontal Menu navBar"
+-there will be different menuLinks
+-menu links will be single, where user selects the link, and the associated 
+ content/section is displayed
+ -or-
+ menuLink is selected, and the link generates dropdown menu items..
+ -for this situation, need to define/figure out if dropdown menu list 
+  is under the "horizontal", or does it happen on the "leftside"/vertical area
+
+-initial attempt at menu links are:
+
+
+/*
+	assume this is "close" to what the app's navBar menu links would be
+*/
+login/resetPasswd
+
+::Main Horiontal Menu::
+--Home  --Platform Operation/Goals  -User Overview  Benefits/RefUsers Rewards    -What We Need From You!  --SignUp/Join  -Rewards(2)  --MiscData [-Platform Data -TgtColleges] -About/Contact us  --AssociatedSites [salesRep | bizPartner]
+--Misc Data [...]
+-Select (Referral) Rewards 2
+-User Referral -Setup/Submit  1
+--Site Guide
+
+(this matches the referral_app_user_guide_oct1_23.txt)
+
+
+view/read
+nav_Home.txt
+nav_PlatformOperation_Goals.txt
+nav_UserOverview_Benefits.txt (for the user -- books -- as well as referrals
+nav_UserOverview_Benefits__ReferralUsers_Rewards.txt
+nav_WhatWeNeedFromYou.txt
+nav_MiscData.txt [Colleges/userData/rewardStats]
+nav_MiscData_Colleges.txt
+nav_MiscData_userData.txt
+nav_MiscData_rewardStats.txt
+ -perhaps page (or multiple pages) to display to the nonlogged user
+	data on cols in the system, as well as (overall) num of users,
+	and the defined rewards for referrals
+nav_AboutUs_ContactUs.txt
+nav_AssociatedSites.txt
+ nav_AssociatedSites_salesReps.txt
+ nav_AssociatedSites_bizPartners/Advertisers.txt
+nav_SiteGuide.txt (How To:)
+
+
+ nav_SiteGuide_Login.txt
+ nav_SiteGuide_ResetPasswd.txt
+ nav_SiteGuide_ReferOtherUsers.txt (Grow the community!) 1
+ nav_SiteGuide_SelectRewardsForReferringUsers.txt       2
+ nav_SiteGuide_ViewSiteData.txt
+ nav_SiteGuide_SignUpJoin.txt // has the sections for - Waitlist
+ nav_SiteGuide_OverallSystem // has the sections for -Userbase.txt --Users/SalesReps/LocalBiz
+ nav_SiteGuide_OverallPlatform.txt //describes the platforms of - bookstore /adPlatform
+ nav_SiteGuide_SignupJoinWaitlist.txt
+
+nav_reg.txt
+
+
+nav_reg_login.txt (in the menu)
+  describe in txt...
+  need to be registered/logged in in order to:
+   passwdReset
+   Signup/Join
+   User Referral -Setup/Submit 1
+   User Ref/Reward Selection 2
+
+
+
+
+
+
+
+
+
+
+

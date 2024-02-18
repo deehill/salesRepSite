@@ -1,0 +1,132 @@
+site22aa_salesReplandingApp_navBar_menu_oct15_23.txt
+
+		menus/items stuff from 
+			-->>testappbb.txt
+
+has the navBar/mnu for all the pages of the 
+ landingPage_app
+	the combined landingPage+registration+referral process
+
+ base ::Main Menu:: items.. make the "links"
+ **home      pages blog shop more portals  system
+	--Home --home-1  tagline
+
+
+each link maps to file for the given page
+ each "page" has the base main navBar/menu items at top of page..
+
+ **Home
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+	 homeContent
+		-should it be a/the diagram... to illustrate the process...
+		-or the actual text
+			maybe the "User Overview" content..
+			of the opinion, that the flow of the content should 
+			tell the user what/how/why this is -- before dealing 
+			with the "details" -- platform/benefits/etc..
+	 tagLine -- 
+ 	 --timer/countdown   (content)
+	 User Counter/Waitlist -- (Goal in order to Start the BetaTest)
+	--Platform Operation/Goals  -submenu item
+		describes the book/ad platform, and the goals of 
+		 competing to give users cheapest books, as well as 
+		 deals from the local operations that support the process
+ --User Overview  /Benefits   (content)
+	 
+ --What We Need From You!     (content)
+ --SignUp/Join     (content) add link to the content "User -(System Actions)->Join"
+								UserRoles  <<< link to menu as well
+								User -(System Actions)
+ --User/Referral Data/Rewards  [-Platform Data -TgtColleges]    (content)
+	(a bit of content about the referral process, as well as bit of content 
+		about the rewards --ala kickstarter. point user to the links for
+		Referrals/Rewards for more information for the user on these areas)
+								link to Rewards/Referral(Actions) <<
+
+ 	-Platform Data -TgtColleges (sub section)
+		bit of attached content for the data driving the overall process
+		 for the colleges/adPartners  point to link for "SiteData -or PlatformData or SystemData --what name??"
+						link to SiteData <<< (for now)
+
+ --About
+						link to PartnerSites <<<
+
+ --AssociatedSites [salesRep | bizPartner]   (content a bit about the role of SalesRep/BizPartner --point to menu links)
+						link to PartnerSites <<<
+
+ //--SiteGuide (How To:)  referral_app_user_guide_oct1_23.txt
+ --FeedbackArea
+ --ContactUs
+
+
+**UserRoles
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+			  reg user
+			  reps
+			  reps
+
+
+**User -(System Actions)
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+						  changeUserData (name/college/etc..)
+						  JoinWaitlist	(in userTBL) 
+
+
+
+**Rewards/Referral(Actions)
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+												  SubmitEmailsForUsersToJoin (display section/page with forms/sumit..)
+												  ViewReferredUSersData/Stats (data display/layout/tbl)
+												  SelectChangeRewardsForUserReferral (from RewardsList)
+												  ViewDisplayRewards Items -- should this be systemwide.. or by area?
+
+
+
+
+**SiteData
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+																			  ViewColleges/~UserGoal/~UserSoFar -- by Area --prob better to 
+																												do area, and list the colleges
+																			  ViewBizPartners
+																				-by Area --tgtBizType/byCount/byActualCount (ties into Rewards)
+
+
+
+**PartnerSites
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+																						  salesRep
+																						  bizPartner
+
+
+**AboutUs
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+
+
+**SiteGuide (How To:)
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+																													 nav_SiteGuide_Login.txt
+																													 nav_SiteGuide_ResetPasswd.txt
+																													 nav_SiteGuide_ReferOtherUsers.txt 																														 nav_SiteGuide_SelectRewardsForReferringUsers.txt  
+																													 nav_SiteGuide_ViewSiteData.txt
+																													 nav_SiteGuide_SignUpJoin.txt 
+																													 nav_SiteGuide_OverallSystem // has the sections for -Userbase.txt --Users/SalesReps/LocalBiz
+																													 nav_SiteGuide_OverallPlatform.txt //describes the platforms of - bookstore /adPlatform
+																													 nav_SiteGuide_SignupJoinWaitlist.txt
+
+
+
+
+echo '' > /apps/parseapp3/site22aa_menu_Home_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_UserRoles_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_UserSystemActions_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_RewardsReferralActions_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_SiteData_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_PartnerSites_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_AboutUs_oct15_23.txt
+echo '' > /apps/parseapp3/site22aa_menu_SiteGuide_oct15_23.txt
+
+
+
+
+
+

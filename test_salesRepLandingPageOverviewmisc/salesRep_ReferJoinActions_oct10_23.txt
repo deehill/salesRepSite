@@ -1,0 +1,138 @@
+tgt user gets email from parentUser
+ tgtuser opens emailToJoin
+ tgtUser wants to join, so selects the emailLinkToJoin 
+	that's in the joinEmailMsg
+
+emailLink--
+ https://www.foo.com/?action=join&referralID=111&uuid=122112
+
+ this directs the "newUser" to the baseSite, where the 
+ parentSessReferralID is 'set' and the user is directed to 
+ the "joinWaitlist" area/section of the page, where the user 
+	is able to fill in the "joinWaitListForm" 
+
+	if the user fills in the "joinWaitListForm" 
+	 with the "submit"
+	 user inserts validated "email", 
+	  the process/logic then updates the "userTBL", with inProc Status
+		--status changes to "active/valid" when 
+			user gets the confirmation join email/link and submits 
+			to update the tbls..
+		as well as the userParentReferralIDTBL
+		-links parent to user referralID
+
+	app then submits "userJoinWaitlistEmail" action to the user with 
+	 userJoinEmailWaitlistConfirm msg, as well as 
+	 userJoinEmailWaitlistConfirmLink
+
+	 -user gets input "emailConfirmation" from app
+	 -user selects the "userJoinEmailWaitlistConfirmLink" 
+		link to join, goes back to the app to the "base" page, with the 
+		http://foo.com/?action=joinwaitlist&userID=abc&uuid=123&status=success
+		--link/url will indicate that user wants to join app/waitlist
+			the uuid is the unique/valid check for user/action combination
+
+	when user joins waitlist, apps allows user to update/complete the 
+	 userDataTBL
+		app sends the user to the basepage/waitlist section, saying 
+		 "thanks for joining waitlist
+			in order to fully join the app to "refer" other users
+			and to see/view or select rewards, you need to 
+			register/login"
+		"--joining waitlist isn't the same as registering/login"
+
+	when user joins waitlist, apps allows user to update/complete the 
+	 userDataTBL
+	 user directed to the userRegistration Area/Section of the page/app
+
+	user registers, using the "existing" email in the system
+	 app detects/determines if the email already exists...
+	 (-- process could also decide to do the waitlist/registration in 
+		a single process...)
+	
+	screw it!!
+	might be just as easy/from app/logic side to have user do a complete 
+	 register/login to handle waitlist -- as well as register/login
+	when user wants to join "waitlist", user has to 
+	 complete/fill in the userRegisterForm, as well as the "joinWaitlistBTN"
+	 
+	app would then send 1 of 2 confirm emailConfirmMsgsEmails
+
+	1)
+		user fills out userDataForm, and fills in JoinWaitListBTN
+		app validates all data.. including email
+		if all data is valid, app updates the userTBL, with the 
+		 status=inProc..
+		if the waitListTBN="" waitlist for userID""
+		app sets the emailConfirmMsg to user
+
+			"thanks for joining the app. this is confirmation
+			to complete process.. submit link
+			http://foo.com/?action=joinApp&userID=abc&uuid=123&status=success
+
+			or
+			http://foo.com/?action=joinApp&waitlistStat=1&userID=abc&uuid=123&status=success
+			waitListBTN="yes"
+
+			"there will also be a confirm msg.. thanks for registering as well 
+			 as joining waitlist"
+
+
+		create logic to handle the completion/insertion of the userDataTBL for the 
+		 waitlist join process
+
+		create logic to handle the creation of the emailWaitlistConfirmMsg/emailConfirmLink
+		create logic to handle the process/tracking of sending the confirm msgs to the 
+		 user
+		create process to track/unique (ie, no duplicate returns of confirm msgs)
+		 [this is where the uniqueID/uuid is coming in.. track/use the 1st 
+			instance of a valid uuid]
+		 user email/uuid
+		 -this stops process from inserting dup users/emails into tbls
+		
+
+		so, once the process of registering/logging the user in happens,
+		 and the processs of extablishing if the user wants to join the 
+		 waitlist, or not....
+
+		 -the process can then allow the user to access the "areas/content" 
+			of the site to read/view, 
+			as well as the areas that require the user to be "registered/logged in"...
+		
+	"signin/login" area/process
+		-content for area should explain the process/action of registering/login 
+		 in order to join "waitlist"
+		-possibly have user select "link" to register/login to join waitlist
+		-logic for page/section would detect if the "userWaitlistSessVar" 
+			is/isn't set..
+
+			if user is logged in
+				if user is already waitlist
+					display msg "alreay set for waitlist "
+				else
+					display msg "set waitlistBTN" if to be added to "waitlist"
+					display/enable "waitlistBTN"
+
+					if sessVar-userID is set --  then select "waitlistBTN" to set waitlistVar
+						update userTBL for userID/waitlist field with waitlistVar
+
+						then "remove msg"   
+ 								"set waitlistBTN" if to be added to "waitlist"
+								"disable" "waitlistBTN"
+ 								display msg -- 'user added to waitlist"  spot x of Y
+					
+			elseif user isnot logged in
+				display msg "login to register/login and be added to waitlist" "select link"
+					link --- "goes to the regiter/login section for user to 
+						register/login -- process confirm msgs/links
+
+
+
+		result of the logic processes should have valid userData
+		make this a part of the user register process...
+		user/passwd -- userData...
+		-- a bit of a "hack" and a bit much.. but stress importance of doing 
+			this once.. as opposed to doing waitlist, and then doing register again..
+
+		once user is "registered"
+

@@ -1,0 +1,110 @@
+site22aa_menu_RewardsReferralActions_oct15_23.txt
+
+supports the site22aa_layout_of_landingpage_based_on_github.dat
+
+possibly use livesite as base app
+	https://github.com/NadavShaar/landing-page-template
+	https://nadavshaar.github.io/landing-page-template/#home
+
+uses information/data from 
+	referral_app_user_guide_oct1_23.txt
+	 site22aa_layout_of_localBizlandingpage_based_on_github.dat
+	 site22aa_localBizlandingApp_navBar_menu_oct15_23.txt --- has the layouts..
+
+localBiz_masterViralRefActions_oct1_23.txt
+-lst of landingPage_membership_community_viral_referral_admin functions
+
+the "RewardsReferralActions" page for the "Home" menu item/link 
+
+the following is the basic layout/wireframe/flow for the "RewardsReferralActions" page/link 
+ when the user selects the "RewardsReferralActions" link from the main navBar
+	-from the navBar, the user can select any of the other navBar menu/link items
+	-user can also select the "upper right" login/registration/passwd items
+		app logic will handle user based on user login status..
+
+
+
+**Rewards/Referral(Actions)
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+												  SubmitEmailsForUsersToJoin (display section/page with forms/sumit..)
+												  ViewReferredUSersData/Stats (data display/layout/tbl)
+												  SelectChangeRewardsForUserReferral (from RewardsList)
+												  ViewDisplayRewards Items -- should this be systemwide.. or by area?
+
+
+
+
+user selects the "Rewards/Referral(Actions)" link/menuItem
+ app displays the child links for the "different" types of "Rewards/Referral(Actions)" for the site
+	-"SubmitEmailsForUsersToJoin"	-logged in user able to select the link to submit "email(s)" to 
+									 recruit "new" users to join the site. link displays new "recruitUser" 
+									 page/section, to allow user to handle inserting the "emails" as well as 
+									 setting up any attributes to submit/send off the emails
+									-the submit/email process allows the "process" to track the 
+									 submitted email via the parentUser referrralID, as well as a tracking 
+									 uuid that's included to the submitEmailUrl sent from the process 
+									 to the tgtUser in the emailMsg, and then returned from the tgtUser 
+									 to the "system" if the user wants to join
+									-might have other function/process logic
+	-"ViewReferredUSersData/Stats" 	-logged in user able to "view" the list/data/total of the 
+									 referred users the parentUser has sent inviteEmails to 
+									 -the data will show total inviteEmails sent, as well as 
+									  subtotal of inviteEmails that have joined, and total of 
+									  inviteEmails sent with no reply
+
+									-process should also allow user to see "top" list of parentUsers 
+									 with the same basic statistics for comparison
+										good to determine where users stand for getting the awards/rewards
+
+	-"SelectChangeRewardsForUserReferral" 	-logged in user able to "view/select" from the rewards list
+									 the "reward" the user wants to "compete" for, or to get based on 
+									 the number of invited users who join the site
+										should rewards be given only to the "top" users based 
+										 on the user getting at least >X users
+										should the reward be given to all users who meet the 
+										 "goal" >X users join<, but only the top Y users get the reward??
+
+									 figure out the logic/process for awarding rewards
+									 spell out -- definitively the reward process
+									-the rewards are set by the "admin/rewardMgr" in the Admin/Rewards 
+									 site -- with the rewardsTBL
+
+
+									user is able to select the "reward" for the given timeframe/semester...
+
+	-"ViewDisplayRewards Items" 	-any user able to "view" the rewards list
+									 list/tbl spells out what a loggedIn user, who's signed up to 
+									 be a "referralParent" -- is able to "get" by referring other users 
+
+									-spells out the "benefit" of helping to grow the community for the 
+									 students, as well as the rewards from the Ad/Biz Partners						
+
+
+ only loggedIn users have access to invoke the Rewards/Referral(Actions)
+ process uses sysVar to track loggedIn state
+ process "greys" out link to non-loggedIn user
+	shows "regular" link to loggedIn user
+
+	greyed out links would be:
+		SubmitEmailsForUsersToJoin
+		ViewReferredUSersData/Stats
+		SelectChangeRewardsForUserReferral
+
+
+each link displays a section/content with basic explanation for the action/process, 
+ and the "form/process" to handle the action/submit
+
+
+ points the user to the "SiteGuide" menu item/link for more information about the 
+	Rewards/Referral(Actions)
+
+for users not logged in, process might display/guide user to login, in order to 
+ handle the Rewards/Referral(Actions) funcs..
+
+
+
+
+
+
+
+

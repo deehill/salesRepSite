@@ -1,0 +1,120 @@
+site22aa_menu_SiteData_oct15_23.txt
+
+supports the site22aa_layout_of_landingpage_based_on_github.dat
+
+possibly use livesite as base app
+	https://github.com/NadavShaar/landing-page-template
+	https://nadavshaar.github.io/landing-page-template/#home
+
+uses information/data from 
+	referral_app_user_guide_oct1_23.txt
+	 site22aa_layout_of_landingpage_based_on_github.dat
+	 site22aa_landingApp_navBar_menu_oct15_23.txt --- has the layouts..
+
+masterViralRefActions_oct1_23.txt
+-lst of landingPage_membership_community_viral_referral_admin functions
+
+the "SiteData" page for the "Home" menu item/link 
+
+the following is the basic layout/wireframe/flow for the "SiteData" page/link 
+ when the user selects the "SiteData" link from the main navBar
+	-from the navBar, the user can select any of the other navBar menu/link items
+	-user can also select the "upper right" login/registration/passwd items
+		app logic will handle user based on user login status..
+
+
+
+**SiteData
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+																			  ViewColleges/~UserGoal/~UserSoFar -- by Area --prob better to 
+																												do area, and list the colleges
+																			  ViewBizPartners
+																				-by Area --tgtBizType/byCount/byActualCount (ties into Rewards)
+
+
+
+
+
+user selects the "SiteData" link/menuItem
+ app displays the child links for the "different" types of "SiteData" for the site
+	-"ViewColleges/User Data"	-users are able to view top level data for colleges in the system 
+								 as well as rough user count (current/tgt)
+	-"ViewBizPartners" 	--users are able to view top level data for local Biz/Ad Partners in the system 
+								 as well as rough Biz count (current/tgt)
+
+
+
+ all users are able to view the overall data
+
+each link displays a section/content with basic explanation for the action/process, 
+ and the "form/process" to handle the action/submit
+
+
+ points the user to the "SiteGuide" menu item/link for more information about the 
+	User-System Action processes
+
+
+::ViewColleges/User Data
+	selecting 'ViewColleges/User Data' allows user to select different attributes to 
+	 get a feel for the Colleges/Users by area
+	 -gives user/local Biz a feel for the scope of the size of the community
+	 -useful for initial/rough thoughts on whether biz might want to advertise
+	 -link would point local Biz to the BizPartner site for more granular 
+	  information on the Bookstore/Local Biz/Ad Platform process 
+
+	-app displays new/updated section using clientside javascript to mod the 
+		client/frontside DOM
+		changing "data" on the client/front with "submit" invokes ajax/async 
+		 processes to send/fetch data between front/srvr.
+		html changes occur on client/front with data from back
+		faster process
+		-uses base javascript or javascript libs...
+	-decide if the action creates different page, or different space/area within 
+		the current page
+
+		 The Textbook platform is targeting a base number of Users
+			to signup to test/use the platform, as well as a base number of 
+			Local Companies to signup to test/advertise on the Platform.
+
+			This page tracks/shows the number/data for these items during the 
+			 initial prelaunch timeframe.
+
+					Number of 	Number of		Number of
+			date	Colleges 	Users (total)	Local Companies (total)
+
+			1/1/1		222			33			44
+
+			pull this tbl/data from the frontside user signin/email
+			 as well as the collegeListTBL, and the bizCompany LandingPage
+			 process/data
+
+
+
+::ViewBizPartners
+	selecting 'ViewBizPartners' allows user to select different attributes to 
+	 get a feel for the scope of the Local Businesses/Ad Partners by area
+	 -gives user/local Biz a feel for the scope of the size of the community/
+	  Local Biz Community the process is driving towards
+	 -useful for initial/rough thoughts on whether biz might want to advertise, 
+	  or if students want to be SalesRep
+	 -link would point local Biz to the BizPartner site for more granular 
+	  information on the Bookstore/Local Biz/Ad Platform process
+	 -link to point user for SalesRep-- to the SalesRep Site for more information 
+	-app displays new/updated section using clientside javascript to mod the 
+		client/frontside DOM
+		changing "data" on the client/front with "submit" invokes ajax/async 
+		 processes to send/fetch data between front/srvr.
+		html changes occur on client/front with data from back
+		faster process
+		-uses base javascript or javascript libs...
+	-decide if the action creates different page, or different space/area within 
+		the current page
+
+the "page"/layout of the page for this section/menuItem still has the main navBar, allowing the 
+	user to then select the given menuItem from the main navBar
+
+
+
+
+
+

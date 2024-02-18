@@ -1,0 +1,83 @@
+salesRep_masterViralRefActions_oct1_23.txt
+-lst of landingPage_membership_community_viral_referral_admin functions
+
+navbar
+/*
+	assume this is "close" to what the app's navBar menu links would be
+*/
+::Main Horiontal Menu::
+--Home  --Platform Operation/Goals  -User Overview  Benefits/RefUsers Rewards    -What We Need From You!  --SignUp/Join  -Rewards(2)  --MiscData [-Platform Data -TgtColleges] -About/Contact us  --AssociatedSites [salesRep | bizPartner]
+--Misc Data [...]
+-Select (Referral) Rewards 2
+-User Referral -Setup/Submit  1
+--Site Guide
+--**Admin
+
+(this matches the referral_app_user_guide_oct1_23.txt)
+
+
+user actions
+-------------------------
+
+regular users
+-------------------------
+ any/all of these actions can be performed by "regular" users/viewers
+ selecting the navBar menu items
+ reading any menuLink sections
+ sections/areas that require "registered/loggedin" users 
+ 	check the "sessValidVar" for the user
+ in the event the user selects a section requiring the 
+	sessValidVar=true, where sessValidVar!=true, 
+	user unable to access section..
+ //--app should then display msg.. "user register/login to access this section.."
+
+ read "home" might be similar to "platform operation/goals" 
+ read about platform operation/goals
+	why/who/how for the site -- it's a site for cheap booksites.. uses ads/local biz 
+								 to lower costs of the books
+
+ --Home
+ tagLine -- 
+ --Platform Operation/Goals  
+ --User Overview  /Benefits    
+ --What We Need From You!  
+ --SignUp/Join  
+ --User/Referral Data/Rewards  [-Platform Data -TgtColleges] 
+ --About/Contact us  --AssociatedSites [salesRep | bizPartner]
+ --timer/countdown
+ --userCounter
+
+ --AssociatedSites
+   -salesReps
+   -bizPartners/Advertisers
+
+ -OverallSystem -Userbase --Users/SalesReps/LocalBiz
+ -OverallPlatform - bookstore /adPlatform
+
+ -ViewSiteData
+
+ 
+registered users
+-------------------------
+ any/all of the above actions can be performed by "register"
+ --the following only by "register"
+
+ -SignUpJoin - Waitlist
+ -Login
+ -ResetPasswd
+
+
+logged in users
+-------------------------
+ any/all of the above actions can be performed by "logged in"
+ --the following only by "logged in"
+
+ --Select Referral/Rewards
+ --User Submits New Referral Emails (for new users to join)
+
+ --**Admin (only available) to select users
+	Admin Menu/Item/Link is here as placeholder
+	This shouldn't be a part of the base/user facing site.
+	--no need to have obnoxious viewers toying with the url.
+
+

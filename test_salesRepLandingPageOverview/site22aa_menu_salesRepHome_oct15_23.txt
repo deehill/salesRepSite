@@ -1,0 +1,536 @@
+
+
+site22aa_menu_salesRepHome_oct15_23.txt
+
+supports the site22aa_layout_of_salesReplandingpage_based_on_github.dat
+
+possibly use livesite as base app
+	https://github.com/NadavShaar/landing-page-template
+	https://nadavshaar.github.io/landing-page-template/#home
+
+uses information/data from 
+	referral_app_user_guide_oct1_23.txt
+	 site22aa_layout_of_salesReplandingpage_based_on_github.dat
+	 site22aa_salesReplandingApp_navBar_menu_oct15_23.txt --- has the layouts..
+
+salesRep_masterViralRefActions_oct1_23.txt
+-lst of landingPage_membership_community_viral_referral_admin functions
+
+the "Home" page for the "Home" menu item/link 
+
+the following is the basic layout/wireframe/flow for the "Home" page/link 
+ when the user selects the "Home" link from the main navBar
+	-from the navBar, the user can select any of the other navBar menu/link items
+	-user can also select the "upper right" login/registration/passwd items
+		app logic will handle user based on user login status..
+
+
+**Default
+**Home
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+
+	//--home submenus
+		the idea here.. is for the submenu to then "link"/direct the app/user 
+		 to an "ID='foo'" within the Home section/content/html 
+		//--submenu items/links [from --site22aa_landingApp_navBar_menu_oct15_23.txt]
+		-home (displays the entire home content/page)
+		-tagLine [ID=tag] 
+ 	 --timer/countdown [ID=timer]   (content)
+	 User Counter/Waitlist [ID=counter] -- (Goal in order to Start the BetaTest)
+	--Platform Operation/Goals  [ID=platform] -submenu item
+		describes the book/ad platform, and the goals of 
+		 competing to give users cheapest books, as well as 
+		 deals from the local operations that support the process
+ --User Overview /Benefits[ID=user]   (content)
+	 
+ --What We Need From You! [ID=what]     (content)
+ --SignUp/Join [ID=signup]     (content) add link to the content "User -(System Actions)->Join"
+
+---------------------------------------------------------------------
+	//--home submenus
+		the idea here.. is for the submenu to then "link"/direct the app/user 
+		 to an "ID='foo'" within the Home section/content/html 
+		//--submenu items/links [from --site22aa_landingApp_navBar_menu_oct15_23.txt]
+		-home (displays the entire home content/page)
+	 	homeContent
+		-should it be a/the diagram... to illustrate the process...
+		-or the actual text
+			maybe the "User Overview" content..
+			of the opinion, that the flow of the content should 
+			tell the user what/how/why this is -- before dealing 
+			with the "details" -- platform/benefits/etc..
+
+		-tagLine [ID=tag] 
+ 	 	--timer/countdown [ID=timer]   (content)
+	 	--User Counter/Waitlist [ID=counter] -- (Goal in order to Start the BetaTest)
+
+		--Platform Operation/Goals  [ID=platform] -submenu item
+			describes the book/ad platform, and the goals of 
+			 competing to give users cheapest books, as well as 
+			 deals from the local operations that support the process
+		--User Overview  /Benefits  [ID=user]   (content)
+	 
+		--What We Need From You! [ID=what]      (content)
+		--SignUp/Join [ID=signup]      (content) add link to the content "User -(System Actions)->Join"
+								UserRoles  <<< link to menu as well
+								User -(System Actions)
+		--User/Referral Data/Rewards [ID=ureferral]  [-Platform Data -TgtColleges]    (content)
+		(a bit of content about the referral process, as well as bit of content 
+			about the rewards --ala kickstarter. point user to the links for
+			Referrals/Rewards for more information for the user on these areas)
+								link to Rewards/Referral(Actions) <<
+
+	 	--Platform Data -TgtColleges [ID=platform] (sub section)
+			bit of attached content for the data driving the overall process
+		 	for the colleges/adPartners  point to link for "SiteData -or PlatformData or SystemData --what name??"
+						link to SiteData <<< (for now)
+
+		// not in the "home" content now.. --About
+		//				link to PartnerSites <<<
+
+		--AssociatedSites [salesRep | bizPartner]  [ID=partners]  (content a bit about the role of SalesRep/BizPartner --point to menu links)
+						link to PartnerSites <<<
+
+ //--SiteGuide (How To:)  referral_app_user_guide_oct1_23.txt
+		--FeedbackArea  [ID=feedback]
+		--ContactUs  	[ID=contact]
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+[
+oct15/23
+-the updated psuedo content for the "home"/default/base page
+ with the psuedo ID="foo" sections...
+ -maps to the submenus in the "home" navBar submenus..
+
+ menu ++ psuedo content
+]
+
+**Default
+**Home
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+
+		-home 
+		-tagLine [link to ID=tag] 
+ 	 	--timer/countdown [link to ID=timer]   (content)
+	 	--User Counter/Waitlist [link to ID=counter] -- (Goal in order to Start the BetaTest)
+		--Platform Operation/Goals  [link to ID=platform]
+		--User Overview  /Benefits  [link to ID=user]   (content)
+	 
+		--What We Need From You! [link to ID=what]      (content)
+		--SignUp/Join [link to ID=signup]   
+		--User/Referral Data/Rewards [link to ID=ureferral]  [-Platform Data -TgtColleges]    (content)
+	 	--Platform Data -TgtColleges [link to ID=platform] (sub section)
+		--AssociatedSites [salesRep | bizPartner]  [link to ID=partners]  
+
+		--FeedbackArea  [link to ID=feedback]
+		--ContactUs  	[link to ID=contact]
+
+
+	//--home submenus
+		the idea here.. is for the submenu to then "link"/direct the app/user 
+		 to an "ID='foo'" within the Home section/content/html 
+		//--submenu items/links [from --site22aa_landingApp_navBar_menu_oct15_23.txt]
+		-home (displays the entire home content/page)
+	 	homeContent
+		-should it be a/the diagram... to illustrate the process...
+		-or the actual text
+			maybe the "User Overview" content..
+			of the opinion, that the flow of the content should 
+			tell the user what/how/why this is -- before dealing 
+			with the "details" -- platform/benefits/etc..
+
+			perhaps some base "user/cheap textbook/content
+			-maybe a "graphic"
+			-or perhaps a dialog/diagram that kind of shows in a circle 
+			 with arrows that has the major "components" of the 
+			 overall system
+
+				/*
+				users    salesReps    advertisers   
+				     bookstore
+					adServer
+					Job/Recruitment Platform
+				*/
+
+			-this is "displayed when user selects 'home" 
+			 from the menu
+
+		-tagLine [ID=tag] 
+			--"we do stuff better!   or something clever.."
+
+ 	 	--timer/countdown [ID=timer]   (content)
+									week day  hr  min.
+			-- a countdownTimer --- 0:00:00:for expected/hoped betatest/start time 
+
+	 	--User Counter/Waitlist [ID=counter] -- (Goal in order to Start the BetaTest)
+
+				Users Signed up/Interested 
+				Colleges Represented
+				(rough approximation)
+					current users      		 diff collegeCount	tgtUserCount
+						joined/waitlist
+
+		--Platform Operation/Goals  [ID=platform] -submenu item
+			describes the book/ad platform, and the goals of 
+			 competing to give users cheapest books, as well as 
+			 deals from the local operations that support the process
+
+			--this is roughly the basic "content" 
+				-needs  to be really refined
+				-the diagram should be either here.. or in the top "home" section
+
+			show diagram/flow of overall textbook/ad process
+
+						        "user looks at site"       +
+						                                   |
+						                         user views class/book(s)
+						                                   |
+						                      site displays ad(s) from local company!
+						                                   |
+						                          user selects/buys book
+						                                   |
+						                                   |
+						                user "hopefully" engages with advertiser!
+										user gets "cheaper" books
+
+
+			What are we doing
+			  providing the same tetbooks as the local 
+			   bookstore for as cheaply as possible
+			   -there is no additional profit added to the price
+			Why are we doing it
+			  books have gotten too expensive
+			  this is our attempt at making the process 
+			   cheaper 
+			How is platform able to run if not charging the 
+			 students for profit on the books
+			 -we work with local businesses who want to advertise to 
+			  the college community, and agree books are too expensive
+			 -by advertising to the student/college community via the 
+			  site/various advertising, these companies support the 
+			  operation.
+			Role of local advertisers
+			 Local companies who want to support the college community and 
+			  think books are too expensive, want to help "advertise" on the 
+			  platform.
+			 The ad rev allows site to operate, books to be shipped.
+			 Advertisements are shown in the platform, as well as via occassional 
+			  txt msg.
+
+			How are books shipped
+			 Once the book is ordered, the item is shipped from the distributor 
+			  to the closest delivery site. This will normally be a fedex/ups 
+			  associated business. 
+			 The operation will not ship to home addresses due to "porch pirates"
+
+
+			-this is "displayed when user selects 'Platform Operation/Goals" 
+			 from the menu
+
+
+
+		--User Overview  /Benefits  [ID=user]   (content)
+
+			 We recognize that college students have enough things to deal with. Textbooks 
+				for classes that are crazy high shouldn't be one of tham. So abc.com is 
+				starting a process to provide users with the right textbooks as cheaply  
+				as possible, by selling directly from the distributor and not taking a 'piece' 
+				of the book cost for profit. This makes abc.com different from the other 
+				online/campus bookstores who stay in business by sticking their hand in 
+				your bank account! 
+
+			 At the same time, we realize that students want to save cash when 
+				buying from businesses close to the college, and a lot of 
+				these same businesses want to engage with the college community (and 
+				families).
+
+			 abc.com is creating an online bookstore/platform, supported by advertising 
+				from local businesses. Best of both worlds: I) Users/Students get cheapest 
+				books possible. II) Companies get to help keep textbook costs down, and to 
+				advertise to customers they want to connect with in a reasonable manner.
+
+			 In order to work, we're targeting the College User/Parent/Family/Etc...
+				And we're betting that:
+					Students are tired of paying high prices for their books
+					Students are willing to give Advertsinsg partners a shot in 
+					 order have cheaper priced books
+					Students are willing to get the word out about the platform to 
+					 other potential Users/Students
+					Students will be OK with getting their books from our shipping 
+					 partners (UPS/FedEx) -- reduces the chance of porch 
+					 pirates/theft since ID is required for pickup
+
+
+			/////---Benefits SubSection
+				--displayed as part of the 'Overview/Benefits' section
+				--give the benefits a 'separation' demarcation/dashed line or something..
+
+			 Benefits for Students/Users are simple:
+				-Save Students at least 15% on required books for their classes
+				-Link the Business Advertising Community and Students with  
+				 better opportunities for Students to save on things they need 
+				 during the College Year
+				-**Over time, create a powerful job/Recruitment Process for 
+					the Student Community
+				-**Over time, create a lucrative tutorial Process for the 
+					Student Community
+
+
+				*For the user who signs up but also wants to actively/recruit 
+				 and refer other users to sign up, the platform gives the user 
+				 the ability to get books even cheaper, (along with other 
+				 potential prizes)
+
+				-this is "displayed when user selects 'User Overview/Benefits" 
+				 from the menu
+
+	 
+		--What We Need From You! [ID=what]      (content)
+
+			 To be perfectly blunt, abc.com needs users to sign up to 
+				test out the proect, and to spread the word, refer other 
+				College Students to test the project.
+
+			 We need users, alot, and more of you! As you understand what we're trying to 
+				build, and what the mission is, if you agree that You should "have" 
+				cheaper books, we need you to spread the word!
+
+			 This project has no chance of working unless College Students/Parents/Etc 
+				spread the word. 
+
+			 The platform needs input from the target audience, to make sure we have 
+				the best approaches to getting you the Cheapest books
+			 The platform needs you to help us make sure we have the ability to get 
+				the best local businesses to advertise on the Platform. IE, the 
+				businesses with Services/Products you want to engage with 
+			 The input we get from you helps the Platform show the Local 
+				businesses that it's in their best interest to be on this 
+				platform to engage with you
+
+			 We need you to sign up with your email, to refer others to grow the 
+				User community to test this project
+			 We need users (a lot) to fill out the User Data section so we have 
+				as much reasonable information to make the case to the Local 
+				Business to be on the platform
+
+			 Once the platform achieves XX Users, we'll start the process to get 
+				the Local business community on board..
+
+			 So, if cheaper books, combined with ads/deals from local companies 
+				excite you, sign up. 
+
+
+				-this is "displayed when user selects 'What We Need From You!" 
+				 from the menu
+
+
+		--SignUp/Join [ID=signup]      (content) add link to the content "User -(System Actions)->Join"
+								UserRoles  <<< link to menu as well
+								User -(System Actions)
+
+
+			 In order to make the Cheap Textbook Platform work, the project needs to 
+				know who wants to help the project grow and to test the project. To do 
+				this, we need to have your email, as well as some information about 
+				you via the UserData Form (below).
+
+				For users who want join the platform, and be part of getting Cheaper 
+				 Textbooks, and engaging with the Advertizers, we ask that you 
+				 sign up with your EmailAddress.
+
+				We also ask that you provide, some information on you so initial 
+				 advertisers can have a better understanding of potential users of 
+				 the platform. (Filling out the UserData form isn't required to be 
+				 in line for the cheap books platform, but it helps the platform 
+				 happen for others!)
+			  
+			EmailAddress::
+			so have 2 sections under 
+			 user who want to submit their email for testing/cheap books
+
+			display clearly
+			 --use highlighted/grey dialog
+			 I) -- this submit dialog.. user wants to get cheaper textbooks 
+					doesn't want to refer other users...
+			 II) -- this submit dialog.. user wants to get cheaper textbooks 
+					wants to help grow the chance of this working by refering other users...
+
+			user selects the btn to signs up/submits email to refer other users
+			 user enters "emailAddrs"
+			 frontside validates/checks email
+			 	if valid, sends the email to serverside for processing
+				 -generates the "post" queryStr/json/urlencrypt
+
+				serverside -emailAction
+				 -gets the unique post from frontside
+				 -validates the postQuery
+					-ensures the postQuery is "domain" bound
+					-ensures data is valid
+						invalid, returns err to frontside
+						valid:
+							decouples input data/packet
+							gets email/inserts email into tbl
+							creates confirm emailMsg
+							builds landingPageURL to be included in emailMsg for 
+							 user to be able to send to the referred friends
+							 -the URL includes a unique referrerID
+							 -ex http://foo.com/?referrerID=ABC
+							when user submits/clicks on the link, user goes to the 
+							 landingpage site, where the referrerID is set as a sessionVar 
+							 to match/add the user to the "parent" user's list/count of 
+							 referred users
+
+							for the "parentUser", is a confirmed email when a friend/child clicks 
+							 on the landingPageURL_referrerID and the app detects the referrerID
+								or, does the friend/user need to "submit their email?
+							-app only counts a referrerID once, no duplicates
+
+							serverside returns "valid" email/with referrerID
+
+			 	if invalid, generate/display "invalid email format -- resubmit"
+					don't send invalid emailPost to erverside
+
+
+			or /user selects the btn to sign up/submits email without refering other users
+			 user enters "emailAddrs"
+			 frontside validates/checks email
+			 	if valid, sends the email to serverside for processing
+				 -generates the "post" queryStr/json/urlencrypt
+
+				serverside -emailAction
+				 -gets the unique post from frontside
+				 -validates the postQuery
+					-ensures the postQuery is "domain" bound
+					-ensures data is valid
+						invalid, returns err to frontside
+						valid:
+							decouples input data/packet
+							gets email/inserts email into tbl
+							creates confirm emailMsg
+								-no referrerID/url is created/inserted into the 
+								 confirm email, even though the user/tbl/app has 
+								 created one for the user
+								---user can change the "refererID" attribute to 
+									be able to "recruit" or give the referrerID 
+									to others.
+
+			 	if invalid, generate/display "invalid email format -- resubmit"
+					don't send invalid emailPost to serverside
+
+
+
+		--User/Referral Data/Rewards [ID=ureferral]  [-Platform Data -TgtColleges]    (content)
+		(a bit of content about the referral process, as well as bit of content 
+			about the rewards --ala kickstarter. point user to the links for
+			Referrals/Rewards for more information for the user on these areas)
+								link to Rewards/Referral(Actions) <<
+
+			frontside logic requires user to already have an email from
+			 the emailSubmit process -- in order to process the UserData form
+				the emailAddr has to be submitted/validated.. 
+				-doesn't make sense to have user fill out form, and 
+				 frontside logic not use the data due to email not being 
+				 complete/valid..
+				-so maybe process should provide "checkbox/radioBTN" for user 
+				 to select denoting emailAddr is submitted/ready
+					-logic would check the emailAddrSessionVar
+						if valid, the fronside logic ungreys the userDataForm
+						 for the user to then complete the userDataForm/items..
+
+
+
+	 	--Platform Data -TgtColleges [ID=platform] (sub section)
+			bit of attached content for the data driving the overall process
+		 	for the colleges/adPartners  point to link for "SiteData -or PlatformData or SystemData --what name??"
+						link to SiteData <<< (for now)
+
+				Data for the Colleges/Users for the system are described in the 
+					link==>>SiteData->ViewColleges
+				Data for the bizPartners for the system are described in the 
+					link==>>SiteData->ViewBizPartners
+
+
+
+		// not in the "home" content now.. --About
+		//				link to PartnerSites <<<
+
+		--AssociatedSites [salesRep | bizPartner]  [ID=partners]  (content a bit about the role of SalesRep/BizPartner --point to menu links)
+						link to PartnerSites <<<
+
+	-"salesRep"	-describes the role of the SalesRep" for the book process with growing the 
+				 local Biz community for the AdPlatform. points the user to the SalesRep 
+				 website for more information
+	-"bizPartner" 	-describes the role of the "bizPartner" for the book process with 
+					 joining the local Biz community for the AdPlatform. points the user 
+					 to the bizPartner website for more information to grow their 
+					 business from advertising via the AdPlatform
+
+				psuedo content
+				Along with the userCommunity site for the booksite, the overall process 
+				 for the cheap textbook process includes sites to drive the Local 
+				 Businesses to the AdServer/Platform. Data/Information on the process 
+				 for dealing ith the "Local Businesses" can be found "hereLink" <<<<
+
+				 In a similar manner, driving the growth of the Local Business 
+				 community acrosss the college areas, happens via the SalesRep 
+				 process. SalesReps are college user who signup to recruit/acquire 
+				 and draw revenue from the Local Businesses. More information 
+				 on the SalesRep/Process can be found "here" (SalesRepLink).<<<<
+
+
+				-this isn't a section that's displayed in the landingPage 
+				 app
+				-this is here as a "placeholder"
+				-when the user selects one of the platformSites in the menu, 
+				 the app goes to the url/link to display a different 
+				 url/landingPage for the associated page
+					SalesReps
+					LocalCompanies
+				-this is "displayed when user selects 'AssociatedSites" 
+				 from the menu
+
+
+ //--SiteGuide (How To:)  referral_app_user_guide_oct1_23.txt
+		--AboutUs  [ID=about]
+			TBD
+			-need to generate/create the content for the About Project Section
+			-need to create the basic layout for this section
+			-this section is displayed as part of the landingPage
+
+			More data on who/what/why the site JNIBooks is being created 
+			 cna be found "here" "aboutUsLink"<<<<
+
+
+
+		--FeedbackArea  [ID=feedback]
+
+			-this isn't a section that's displayed in the landingPage 
+			 app
+			-this is here as a "placeholder"
+			-has some content on how to reply/submit feedback to the site
+			 has a feedback dialog/form
+				email
+				topic
+				dialog
+				etc
+				"submit"
+
+
+		--ContactUs  	[ID=contact]
+
+			-this isn't a section that's displayed in the landingPage 
+			 app
+			-this is here as a "placeholder"
+			-has some content on how to contactUs 
+			 has a contact dialog/form
+				email
+				topic
+				dialog
+				etc
+				"submit"
+
+
+

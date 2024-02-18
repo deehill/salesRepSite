@@ -1,0 +1,92 @@
+salesRep_referral_admin_sep25_23.txt
+
+	referral_p1.txt
+	//referral_p2.txt
+	referral_userAction_sep25_23.txt
+	referral_p1_applogic_sep25_23.txt
+
+
+This doc describes the basic user adMin actions  for the "test" landingPage/referralID 
+ test app.
+
+The basic "test" landingPage/ReferralID webapp (wireframe/layout) is 
+ described in the default -- referral_p1.txt
+  
+
+The "Admin" logic/processes for the overall landingPage/referralID process as 
+ well as any of the app user input/db/tbl processes are described here..
+
+The idea is to then translate these functions/actions into the backsrvr/logic 
+ for the app...
+
+
+Viral/ReferralID proces/logic function
+	user emailForm
+	userDataForm
+
+
+"single/multiple" rewards engine/process/logic function
+	-ability to have "single" reward for the user who refers X users
+	-ability to have "rewardA" for the user who refers A users
+	-ability to have "rewardB" for the user who refers B users
+
+
+Admin Page "logic/process" function to handle 
+ the viral/rewards processes
+	-enable/disable users
+	-enable/disable ipAddress for the input "email" user
+	-ipAddress disable should also be performed at the OS/ssh level
+	-etc..
+
+"basic" CRM/Page process
+ to be able to test/oversee 
+ the initial userbase as users signup/join, and complete the userData form
+	track all valid user/email
+	-insert all fields of userDataForm in CRM tbls/db
+	-track user viral/referralID relationships
+	-etc..
+
+
+======================================
+
+default/basePage
+-the base url page
+-https://www.testpage.com
+-has the initial/base page/content for the test landingPage/referralID "dialog/form"
+
+the base page kind of looks like:::
+
++========================================================================+
+
+top  header::navBar
+	[this is going to have a horiz/ dropdown menu list]
+
++========================================================================+
+
++========================================================================+
+  "some content Area"
+
++========================================================================+
++========================================================================+
+  "user Call To Action - content Area"
+
++========================================================================+
++========================================================================+
+  referralID/user email dialog
+  ++-- userEmail form/entry
+  ++ submitBTN
+
++========================================================================+
++========================================================================+
+  " User Counter -- (users who've signed up so far) Area"
+
++========================================================================+
+
++========================================================================+
+  "WhoWeAre - content Area"
+  "Feedback - content Area"
+	etc....
++========================================================================+
+
+
+

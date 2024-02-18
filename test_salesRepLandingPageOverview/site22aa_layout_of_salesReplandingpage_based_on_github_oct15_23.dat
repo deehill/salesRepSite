@@ -1,0 +1,547 @@
+
+site22aa_layout_of_salesReplandingpage_based_on_github_oct15_23.dat
+
+	oct15/23
+	-gives some initial overview/content for the base user landingApp
+
+-uses the base site as a kind of rough guide..
+	site22aa_layout_of_base_github.dat
+		works with site22aa_strict_layout_of_landingpage_based_on_github_jun10_23.dat
+			which has the basic/top layout...
+		which has the https://react-landing-page-template-93ne.vercel.app/
+		 as the initial test site to get a feel for the sections/menus..
+
+-this has more detail/data on the userEmail/UserData process...
+
+https://sagarbisht.tech/
+
+https://glazelinestudio.com/
+ajay
+
+https://react-landing-page-template-93ne.vercel.app/
+	use this** for the most part...
+
+layout of https://react-landing-page-template-93ne.vercel.app/
+
+top level menu
+
+//'home' 'catalogue' 'about' 'contact' 'message/contact'
+//'home' 'features' 'about' 'gallery' 'team' 'message/contact'
+ --selecting the 'menu item' goes to that portion of the default page
+	or to the specified page
+	-any associated page also has the same top level 
+
+possibly use livesite as base app
+	https://github.com/NadavShaar/landing-page-template
+	https://nadavshaar.github.io/landing-page-template/#home
+
+
+tgtsite menu options..
+login/resetPasswd
+
+::Main Horiontal Menu::
+-Home   -Platform Operation/Goals  -User Overview  /Benefits    -What We Need From You!  -SignUp/Join  -User/Referral Data/Rewards  [-Platform Data -TgtColleges] -About/Contact us  --AssociatedSites [salesRep | bizPartner]
+--Misc Data [...]
+-Select (Referral) Rewards 2
+-User Referral -Setup/Submit  1
+--Site Guide
+
+/*
+	menu issues/links
+	for the AssociatedSites/PlatformSites, links are
+		SalesReps
+		Local Companies
+
+		these link to the associated LandingPage apps for the 
+		 "sales rep -user community"
+		 "Local Companies" for the advertising process for the platform 
+*/
+
+=====================================
+=====================================
+
+'home' section from menu
+
+	perhaps some base "user/cheap textbook/content
+	-maybe a "graphic"
+	-or perhaps a dialog/diagram that kind of shows in a circle 
+	 with arrows that has the major "components" of the 
+	 overall system
+
+		/*
+		users    salesReps    advertisers   
+             bookstore
+			adServer
+			Job/Recruitment Platform
+		*/
+
+	-this is "displayed when user selects 'home" 
+	 from the menu
+=====================================
+=====================================
+
+=====================================
+ 
+"site tagline"
+	--we do stuff better!
+
+
+-show the "counter/timer in this section as well
+Timer/Countdown Area
+
+-show the "basic user stats in this section/area as well
+	Users Signed up/Interested 
+	Colleges Represented
+
+=====================================
+
+
+=====================================
+=====================================
+'Platform Operation/Goals' section from menu
+
+--this is roughly the basic "content" 
+	-needs  to be really refined
+	-the diagram should be either here.. or in the top "home" section
+
+show diagram/flow of overall textbook/ad process
+
+                    "user looks at site"       +
+                                               |
+                                     user views class/book(s)
+                                               |
+                                  site displays ad(s) from local company!
+                                               |
+                                      user selects/buys book
+                                               |
+                                               |
+                            user "hopefully" engages with advertiser!
+							user gets "cheaper" books
+
+
+What are we doing
+  providing the same tetbooks as the local 
+   bookstore for as cheaply as possible
+   -there is no additional profit added to the price
+Why are we doing it
+  books have gotten too expensive
+  this is our attempt at making the process 
+   cheaper 
+How is platform able to run if not charging the 
+ students for profit on the books
+ -we work with local businesses who want to advertise to 
+  the college community, and agree books are too expensive
+ -by advertising to the student/college community via the 
+  site/various advertising, these companies support the 
+  operation.
+Role of local advertisers
+ Local companies who want to support the college community and 
+  think books are too expensive, want to help "advertise" on the 
+  platform.
+ The ad rev allows site to operate, books to be shipped.
+ Advertisements are shown in the platform, as well as via occassional 
+  txt msg.
+
+How are books shipped
+ Once the book is ordered, the item is shipped from the distributor 
+  to the closest delivery site. This will normally be a fedex/ups 
+  associated business. 
+ The operation will not ship to home addresses due to "porch pirates"
+
+
+	-this is "displayed when user selects 'Platform Operation/Goals" 
+	 from the menu
+
+=====================================
+=====================================
+'about' section from menu
+'User Overview/Benefits' section from menu
+
+ We recognize that college students have enough things to deal with. Textbooks 
+	for classes that are crazy high shouldn't be one of tham. So abc.com is 
+	starting a process to provide users with the right textbooks as cheaply  
+	as possible, by selling directly from the distributor and not taking a 'piece' 
+	of the book cost for profit. This makes abc.com different from the other 
+	online/campus bookstores who stay in business by sticking their hand in 
+	your bank account! 
+
+ At the same time, we realize that students want to save cash when 
+	buying from businesses close to the college, and a lot of 
+	these same businesses want to engage with the college community (and 
+	families).
+
+ abc.com is creating an online bookstore/platform, supported by advertising 
+	from local businesses. Best of both worlds: I) Users/Students get cheapest 
+	books possible. II) Companies get to help keep textbook costs down, and to 
+	advertise to customers they want to connect with in a reasonable manner.
+
+ In order to work, we're targeting the College User/Parent/Family/Etc...
+	And we're betting that:
+		Students are tired of paying high prices for their books
+		Students are willing to give Advertsinsg partners a shot in 
+		 order have cheaper priced books
+		Students are willing to get the word out about the platform to 
+		 other potential Users/Students
+		Students will be OK with getting their books from our shipping 
+		 partners (UPS/FedEx) -- reduces the chance of porch 
+		 pirates/theft since ID is required for pickup
+
+
+/////---Benefits SubSection
+	--displayed as part of the 'Overview/Benefits' section
+	--give the benefits a 'separation' demarcation/dashed line or something..
+
+ Benefits for Students/Users are simple:
+	-Save Students at least 15% on required books for their classes
+	-Link the Business Advertising Community and Students with  
+	 better opportunities for Students to save on things they need 
+	 during the College Year
+	-**Over time, create a powerful job/Recruitment Process for 
+		the Student Community
+	-**Over time, create a lucrative tutorial Process for the 
+		Student Community
+
+
+	*For the user who signs up but also wants to actively/recruit 
+	 and refer other users to sign up, the platform gives the user 
+	 the ability to get books even cheaper, (along with other 
+	 potential prizes)
+
+
+
+	-this is "displayed when user selects 'User Overview/Benefits" 
+	 from the menu
+
+=====================================
+=====================================
+'gallery' section from menu
+'What We Need From You!' section from menu
+
+ To be perfectly blunt, abc.com needs users to sign up to 
+	test out the proect, and to spread the word, refer other 
+	College Students to test the project.
+
+ We need users, alot, and more of you! As you understand what we're trying to 
+	build, and what the mission is, if you agree that You should "have" 
+	cheaper books, we need you to spread the word!
+
+ This project has no chance of working unless College Students/Parents/Etc 
+	spread the word. 
+
+ The platform needs input from the target audience, to make sure we have 
+	the best approaches to getting you the Cheapest books
+ The platform needs you to help us make sure we have the ability to get 
+	the best local businesses to advertise on the Platform. IE, the 
+	businesses with Services/Products you want to engage with 
+ The input we get from you helps the Platform show the Local 
+	businesses that it's in their best interest to be on this 
+	platform to engage with you
+
+ We need you to sign up with your email, to refer others to grow the 
+	User community to test this project
+ We need users (a lot) to fill out the User Data section so we have 
+	as much reasonable information to make the case to the Local 
+	Business to be on the platform
+
+ Once the platform achieves XX Users, we'll start the process to get 
+	the Local business community on board..
+
+ So, if cheaper books, combined with ads/deals from local companies 
+	excite you, sign up. 
+
+
+	-this is "displayed when user selects 'What We Need From You!" 
+	 from the menu
+
+
+
+=====================================
+=====================================
+'team' section from menu
+'SignUp/Join' section from menu
+
+ In order to make the Cheap Textbook Platform work, the project needs to 
+	know who wants to help the project grow and to test the project. To do 
+	this, we need to have your email, as well as some information about 
+	you via the UserData Form (below).
+
+	For users who want join the platform, and be part of getting Cheaper 
+	 Textbooks, and engaging with the Advertizers, we ask that you 
+	 sign up with your EmailAddress.
+
+	We also ask that you provide, some information on you so initial 
+	 advertisers can have a better understanding of potential users of 
+	 the platform. (Filling out the UserData form isn't required to be 
+	 in line for the cheap books platform, but it helps the platform 
+	 happen for others!)
+  
+EmailAddress::
+so have 2 sections under 
+ user who want to submit their email for testing/cheap books
+
+display clearly
+ --use highlighted/grey dialog
+ I) -- this submit dialog.. user wants to get cheaper textbooks 
+		doesn't want to refer other users...
+ II) -- this submit dialog.. user wants to get cheaper textbooks 
+		wants to help grow the chance of this working by refering other users...
+
+user selects the btn to signs up/submits email to refer other users
+ user enters "emailAddrs"
+ frontside validates/checks email
+ 	if valid, sends the email to serverside for processing
+	 -generates the "post" queryStr/json/urlencrypt
+
+	serverside -emailAction
+	 -gets the unique post from frontside
+	 -validates the postQuery
+		-ensures the postQuery is "domain" bound
+		-ensures data is valid
+			invalid, returns err to frontside
+			valid:
+				decouples input data/packet
+				gets email/inserts email into tbl
+				creates confirm emailMsg
+				builds landingPageURL to be included in emailMsg for 
+				 user to be able to send to the referred friends
+				 -the URL includes a unique referrerID
+				 -ex http://foo.com/?referrerID=ABC
+				when user submits/clicks on the link, user goes to the 
+				 landingpage site, where the referrerID is set as a sessionVar 
+				 to match/add the user to the "parent" user's list/count of 
+				 referred users
+
+				for the "parentUser", is a confirmed email when a friend/child clicks 
+				 on the landingPageURL_referrerID and the app detects the referrerID
+					or, does the friend/user need to "submit their email?
+				-app only counts a referrerID once, no duplicates
+
+				serverside returns "valid" email/with referrerID
+
+ 	if invalid, generate/display "invalid email format -- resubmit"
+		don't send invalid emailPost to erverside
+
+
+or /user selects the btn to sign up/submits email without refering other users
+ user enters "emailAddrs"
+ frontside validates/checks email
+ 	if valid, sends the email to serverside for processing
+	 -generates the "post" queryStr/json/urlencrypt
+
+	serverside -emailAction
+	 -gets the unique post from frontside
+	 -validates the postQuery
+		-ensures the postQuery is "domain" bound
+		-ensures data is valid
+			invalid, returns err to frontside
+			valid:
+				decouples input data/packet
+				gets email/inserts email into tbl
+				creates confirm emailMsg
+					-no referrerID/url is created/inserted into the 
+					 confirm email, even though the user/tbl/app has 
+					 created one for the user
+					---user can change the "refererID" attribute to 
+						be able to "recruit" or give the referrerID 
+						to others.
+
+ 	if invalid, generate/display "invalid email format -- resubmit"
+		don't send invalid emailPost to serverside
+
+
+
+UserData::
+frontside logic requires user to already have an email from
+ the emailSubmit process -- in order to process the UserData form
+	the emailAddr has to be submitted/validated.. 
+	-doesn't make sense to have user fill out form, and 
+	 frontside logic not use the data due to email not being 
+	 complete/valid..
+	-so maybe process should provide "checkbox/radioBTN" for user 
+	 to select denoting emailAddr is submitted/ready
+		-logic would check the emailAddrSessionVar
+			if valid, the fronside logic ungreys the userDataForm
+			 for the user to then complete the userDataForm/items..
+
+
+
+user selects the emailValidBtn to disply the userDataForm
+
+ user completes the userDataFomr/items
+
+/*
+	UserDataForm items::--
+	userName
+	userAddress/city
+	userCollege( -one or more)
+	do you want to "refer"
+	how much are textbooks
+	do you pay
+	who pays
+	do you want cheaper textbooks
+	where do you get your textbooks
+	do you use custom materials for classes
+	does your school bundle cost of textbooks with tuition
+	would you use cheaper books instead of bundling
+	do you get online/delivered items (amazon/etsy/etc..)
+	would you be good with getting your books from a fedex/ups 
+	 location to reduce porch pirate/theft
+	do you do social media
+
+where do you get your textbooks
+would you be more inclined to do business with 
+ local companies that help lower your tetbook cost
+would you be willing to refer other user to sign up to 
+ try out this site
+what city/college
+do you do social media
+Would you be more likely to use companies that helped support 
+ cheaper books
+What kind of buisnesses would you be inclined to want to see ads 
+ from
+--etc/more fields in the userData form/dialogue
+	*/
+
+ frontside validates/checks userDataForm items
+ 	if valid, sends the userDatajson/packet to serverside for processing
+	 -generates the "post" queryStr/json/urlencrypt
+
+	serverside -userDataAction
+	 -gets the unique post from frontside
+	 -validates the postQuery
+		-ensures the postQuery is "domain" bound
+		-ensures data is valid
+			invalid, returns err to frontside
+			valid:
+				decouples input data/packet
+				gets email/userData --inserts data into tbl
+				returns "userDataAddedSuccess" to frontside...
+
+ 	if invalid, generate/display "invalid userData -- resubmit"
+		don't send invalid userDataPostQuery to serverside
+
+
+	-this is "displayed when user selects 'SignUp/Join" 
+	 from the menu
+
+
+
+=====================================
+=====================================
+'message/contact' section from menu
+'User/Referral Data/Rewards' section from menu
+
+	-this is "displayed when user selects 'User/Referral Data/Rewards" 
+	 from the menu
+
+
+=====================================
+=====================================
+
+'message/contact' section from menu
+'Platform Data -TgtColleges' section from menu
+	-this is a different page for the landingPageApp
+	-page shows some basic data to the user for the 
+		inputs to the platform to give a scope of the size
+
+ The Textbook platform is targeting a base number of Users
+	to signup to test/use the platform, as well as a base number of 
+	Local Companies to signup to test/advertise on the Platform.
+
+	This page tracks/shows the number/data for these items during the 
+	 initial prelaunch timeframe.
+
+			Number of 	Number of		Number of
+	date	Colleges 	Users (total)	Local Companies (total)
+
+	1/1/1		222			33			44
+
+	pull this tbl/data from the frontside user signin/email
+	 as well as the collegeListTBL, and the bizCompany LandingPage
+	 process/data
+
+
+
+=====================================
+=====================================
+
+
+'message/contact' section from menu
+'AssociatedSites' section from menu (Partner)
+
+	-this isn't a section that's displayed in the landingPage 
+	 app
+	-this is here as a "placeholder"
+	-when the user selects one of the platformSites in the menu, 
+	 the app goes to the url/link to display a different 
+	 url/landingPage for the associated page
+		SalesReps
+		LocalCompanies
+	-this is "displayed when user selects 'AssociatedSites" 
+	 from the menu
+
+=====================================
+=====================================
+
+'message/contact' section from menu
+'About/Contact us' section from menu
+
+	TBD
+	-need to generate/create the content for the About Project Section
+	-need to create the basic layout for this section
+	-this section is displayed as part of the landingPage
+
+
+
+
+	-this is "displayed when user selects 'About/Contact us" 
+	 from the menu
+
+
+=====================================
+=====================================
+
+=====================================
+=====================================
+
+'message/Feedback' section from menu
+'Feedback' section from menu
+
+	-this isn't a section that's displayed in the landingPage 
+	 app
+	-this is here as a "placeholder"
+	-has some content on how to reply/submit feedback to the site
+	 has a feedback dialog/form
+		email
+		topic
+		dialog
+		etc
+		"submit"
+
+
+=====================================
+=====================================
+
+'message/contact' section from menu
+'ContactUs' section from menu
+
+	-this isn't a section that's displayed in the landingPage 
+	 app
+	-this is here as a "placeholder"
+	-has some content on how to contactUs 
+	 has a contact dialog/form
+		email
+		topic
+		dialog
+		etc
+		"submit"
+
+	might be the same as "feedback" -- maybe keep either one..
+
+
+=====================================
+=====================================
+
+
+
+

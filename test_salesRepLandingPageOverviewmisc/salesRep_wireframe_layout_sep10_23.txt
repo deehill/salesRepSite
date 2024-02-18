@@ -1,0 +1,183 @@
+wireframe/layout
+
+
+navbar
+ home    what/why   overall process   signup/waitlist   aboutus
+       tgtGoals -in the "top" part of the page
+		  whatWeNeed from you-- after tgtTBL -- before signup
+			SignUp -- overview/signup form -- waitlist email/form
+				aboutUS
+
+					System Overview (drop menu)
+					 --PlatformData
+=========================================================================
+page section/div
+ for each of the navbar "sections"/areas
+ -need to decide if the content for each section 
+	is "#tag" and displayed after each section
+ -or does it appear/happen as sep page that gets inserted?
+
+ home/ tgtGoal/ whatweneed
+ -timer/counter
+
+=========================================================================
+signup / input form
+
+ -contains content
+ -contains waitlist/join form
+ -define the form/layout/fields
+ -define the form/field/logic
+ -ajax process to handle db/srvr calls
+ 
+=========================================================================
+aboutUS (after the signup section)
+ -again.. 
+ about us content
+ -team content
+ -feedback dialog
+ -emailAddress 
+=========================================================================
+system overview
+-selecting the menu item
+ generates the "dropdown" menu of the subitems
+ 
+ -project timeline section
+ -platformData section
+
+ -referral strategies/viral growth
+ -benefits
+
+ for the submenus in the "system overview"
+  need to determine if the selecting of the "systemOverview" item 
+ 	generates new page with "all" of the child/submenus as "#tags"
+	-or-
+	does selecting a submenu generate a sep/diff page..
+
+===========================================================================
+
+the navbar should remain the same regardless of the nav/menu item...
+
+
+-create/implement/test functionality
+-need basic test site for function
+ -once function/basic content/forms work
+	--implement look/feel/ux with graphics if needed
+
+
+******************
+in the waitlist/refer/signup "logic", need to create 
+ logic for handling a referral/userID process. Allows 
+ users to refer other users, and to track the users/child 
+ relationships.
+
+
+
+
+
+
+
+menu action::::
+::::::::::::::::::::::::::::::::::
+
+ home    tgtGoals   whatWeNeed from you   signup/waitlist   aboutus  			System Overview
+															 -team content	 		-project timeline section
+															 -feedback dialog		-platformData section
+															 -emailAddress 			-referral strategies/viral growth
+																					-benefits
+
+ "default page"
+ -displayed when the base url is selected
+ -just the base page, starting at the top..
+   base page has
+	-home section
+	-tgtGoals section
+	-whatWeNeedFromU section..
+	
+
+ home**    tgtGoals   whatWeNeed from you   signup/waitlist   aboutus  			System Overview
+															 -team content	 		-project timeline section
+															 -feedback dialog		-platformData section
+															 -emailAddress 			-referral strategies/viral growth
+																					-benefits
+
+ "home section"
+ -displayed when the "home menu item" is selected
+ -just the base/home page/section, starting at the top..
+	-home section
+	-tgtGoals section
+	-whatWeNeedFromU section..
+	
+
+
+ home    tgtGoals**   whatWeNeed from you   signup/waitlist   aboutus  			System Overview
+															 -team content	 		-project timeline section
+															 -feedback dialog		-platformData section
+															 -emailAddress 			-referral strategies/viral growth
+																					-benefits
+
+ "tgtGoals section"
+ -displayed when the "tgtGoals menu item" is selected
+ -just the base/home page/section, starting at the #tgtGoals..
+	-home section
+	-#tgtGoals section
+	-whatWeNeedFromU section..
+	
+
+
+
+ home    tgtGoals   whatWeNeed from you**   signup/waitlist   aboutus  			System Overview
+															 -team content	 		-project timeline section
+															 -feedback dialog		-platformData section
+															 -emailAddress 			-referral strategies/viral growth
+																					-benefits
+
+ "whatWeNeed from you section"
+ -displayed when the "whatWeNeed from you -  menu item" is selected
+ -just the base/home page/section, starting at the '#whatWeNeed from you'..
+	-home section
+	-tgtGoals section
+	-#whatWeNeedFromU section..
+	
+
+
+
+ home    tgtGoals   whatWeNeed from you   signup/waitlist**   aboutus  			System Overview
+															 -team content	 		-project timeline section
+															 -feedback dialog		-platformData section
+															 -emailAddress 			-referral strategies/viral growth
+																					-benefits
+
+ "signup/waitlist  section"
+ -displayed when the "signup/waitlist -  menu item" is selected
+ -just the signup/waitlist section, starting at the top'..
+	-signup/waitlist section
+	
+
+
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+back srvrside logic
+ -db/tbl setup
+ -logic for referral process
+ -logic to handle email functions
+ -logic to handle Admin processes
+
+
+web srvr processes:
+ setup/test srver
+ security of cloud instance
+
+
+Need to identify/create Admin page/logic
+ -manage users - enable/disable/etc
+ -ipAddress process - enable/disable/etc
+ -track user/referrers
+ -track userData from the user signup forms
+ -etc..
+
+
+

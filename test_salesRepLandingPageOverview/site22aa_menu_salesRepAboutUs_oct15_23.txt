@@ -1,0 +1,57 @@
+site22aa_menu_salesRepAboutUs_oct15_23.txt
+
+supports the site22aa_layout_of_landingpage_based_on_github.dat
+
+possibly use livesite as base app
+	https://github.com/NadavShaar/landing-page-template
+	https://nadavshaar.github.io/landing-page-template/#home
+
+uses information/data from 
+	referral_app_user_guide_oct1_23.txt
+	 site22aa_layout_of_salesReplandingpage_based_on_github.dat
+	 site22aa_salesReplandingApp_navBar_menu_oct15_23.txt --- has the layouts..
+
+salesRep_masterViralRefActions_oct1_23.txt
+-lst of landingPage_membership_community_viral_referral_admin functions
+
+the "AboutUs" page for the "Home" menu item/link 
+
+the following is the basic layout/wireframe/flow for the "AboutUs" page/link 
+ when the user selects the "AboutUs" link from the main navBar
+	-from the navBar, the user can select any of the other navBar menu/link items
+	-user can also select the "upper right" login/registration/passwd items
+		app logic will handle user based on user login status..
+
+
+
+**AboutUs
+	Home	UserRoles	User -(System Actions)	Rewards/Referral(Actions)	SiteData	PartnerSites	AboutUs		SiteGuide (How To:)
+
+
+
+
+
+
+
+user selects the "AboutUs" link/menuItem
+ the app has no submenu items/links for the "AboutUS" menu item. the app displays content for the "AboutUS" 
+	overview of who/what/why is the side. Gives the user a bit of insight into who's behind the 
+	site/process for the Booksite/AdServer Platform, the cheap textbooks goal.
+
+
+ all users are able to view the overall data
+
+the link displays a section/content with basic explanation for the AboutUs information. There's
+ no "form/process/action" to handle.
+
+	-decide if the link/action creates different page, or different space/area within 
+		the current page
+
+the "page"/layout of the page for this section/menuItem still has the main navBar, allowing the 
+	user to then select the given menuItem from the main navBar
+
+
+
+
+
+

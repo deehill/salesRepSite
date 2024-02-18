@@ -1,0 +1,288 @@
+referral_userAction_sep25_23.txt
+
+	referral_p1.txt
+	//referral_p2.txt
+	referral_admin_sep25.txt docs..
+	referral_p1_applogic_sep25_23.txt
+
+
+This doc describes the basic user actions for the "test" landingPage/referralID 
+ test app.
+
+The basic "test" landingPage/ReferralID webapp (wireframe/layout) is 
+ described in the default -- referral_p1.txt
+  
+
+The user Actions for each of the "process/logic/function(s)" is 
+ described/follows:
+
+The default/base page allows the user to perform the following actions:
+ -Select the "NavBar" menu Items
+	NavBar Items -- simply displays the given section of the page 
+	 -or- in the case of the "Benefits/Data" item, will 
+	 generate a different "page" 
+
+ The "UpdateUserData" navBar menu item/link
+	user selecting item, gets user to the userUpdateData segment/page
+	 area
+		-gives "logged-in user" form with current data, as well 
+		 as ability to update the formData items...
+		-prob need to make this sep page
+  
+ The "Signup" Area of the default page
+	allows the user to submit their "valid" EmailAddress to Join 
+	 the "waitlist" 
+		-joining the waitlist allows the user to be added to the 
+		 waitlist to test/join the booksite/advertising platform
+	Signup Area also has a 
+		>>>>"Refer Other Users for Rewards" <<<< (RadioBTN)
+		selecting this BTN allows the user to have an assigned 
+		ReferralID, which is passed to the "referred" user (child 
+		user) by the parentUser
+
+	[
+		signup area/login..
+		--ok decided that when user wants to fill in the email/join 
+			dialog/form, the user needs to go ahead and login
+		-a bit of a kludge/overkill as the process to sign-in/join, 
+		 requires user to login, with confirmation..
+		-stress to user -- apologize that this is to have a better 
+		 data capture for potential Advertisers as well..
+		 --lemons/lemonade!
+
+		--since the basic "userData" process to join/waitlist 
+			requires user to login, fill in userData,
+			-have a sep "navBar" menuItem- to handle "userReferralSetup"
+	]
+
+Adding new users by existing users --Action::
+	Need to define if users need to send emails to add new users 
+	 from the website, or if the user should send the emails from 
+	 the user's own email acct
+		pro -- having the user, sending the emails to the "referred/new" 
+		 user, would solve some of the issues with the email srvr process
+		con --
+			would require user to "track/implement" the user's msg from the 
+			user's email app..
+
+	sending "joinMsg" to new users from the website/app
+		would allow parentUser to be able to insert "childUser" 
+		emailAddresses into the "sendNewUserEmail" portion of 
+		the process.
+		-app would send "generic" -newUserJoinMsg to the newUser's 
+		 emailAddress
+			-the "body" would be generic
+			-the "from" would be from the "webAppAddress"
+			-parentUser would be the "cc" Address..
+	should process allow just a "standard/generic" JoinMsg, 
+	 or allow the user to "modify/create" their own..
+
+	the "JoinMsg" would have the parentUser's emailAddress, as well as 
+	 the parent return email/referralID in the body.
+	if the user wants to visit the site, and to join, the user 
+	 selects/submits the "returnEmailLink" in the body, which 
+	 takes the user to the defaultPage. The parent user's referralID 
+	 is tracked, and displayed to the "newUser" if the "newUser" 
+	 wants to join on the "waitlist" with the ParentUser's referralID
+
+	the newUser could elect to join, without using the parentReferralID
+	 (a user can only have one/single "parentUserReferralID")
+
+	the generic email/body/text does a short invite to the new user 
+	 for the cheap textbook site. User ABC is inviting the newUser to 
+	 join the waitlist and when joining, using the referralID from user ABC 
+	 then helps "user ABC" to earn the rewards for having X users join!!
+
+	email/body also explains that newUser can be on waitlist for the 
+	 booksite, 
+	-or- can join for waitlist, as well as refer other Users (with your own 
+	 referralID) to get rewards as well..
+ 	(in other words, joining the waitlist, doesn't mean the user has 
+	 to refer other users)
+
+	The process needs to have XX students to move on/continue to build
+	 the bookstore/adPlatform for advertisers
+
+	[the above text contains a good overview of what the requestToJoin body] 
+	 would look like..
+
+	sysActions: -- email/waitlist
+		processes the waitlist/email form
+		updates userTBL userEmail, referralChk (y/n), referralID
+
+		if user wants to "Refer" other users
+		-should user then fill in the userData Form
+		--need to determing/resolve this step
+
+		if the user fills in the userDataForm, the process then 
+		 updates the userTBL with the userDataForm items
+		 -has to "validate" items where possible using javascript logic 
+			cleans the data (clientside), prior to sending data to srvr 
+			for tbl insertion
+		-returns srvr update status to frontside..
+
+		updates the userReferralStatusIDTBL
+			parentUserID
+			childUserID
+			status -- what does this mean
+			date - when childUserJoined as referred user
+			  --userTBL has userID/referralID already .. no need to store again
+
+	 parentUser 
+
+
+ -for the "Signup" 
+
+Viral/ReferralID proces/logic function
+	user emailForm
+	userDataForm
+
+[
+signup msgs
+-required email/signup related msgs
+ generic recruit/request to join - from user->new user
+ thank you/confirm   system->user
+ rewards met -- system->user when rewards triggers met
+
+]
+
+"single/multiple" rewards engine/process/logic function
+	-ability to have "single" reward for the user who refers X users
+	-ability to have "rewardA" for the user who refers A users
+	-ability to have "rewardB" for the user who refers B users
+
+rewardsUserAction
+ webapp/section -- need to define what top navBar menu link points to 
+	"rewards" section ---
+	-define if this is sep page, or part of a combned section page
+	
+[
+rewards section
+ displays written "rewards" content
+ -might be stored/tracked in tbl
+			rewardTBL
+				rewardData, rewardID, total date
+			rewardTrackingTBL
+				rewardID, inProcCount, toGoCount, date
+			userRewardTBL
+				userID, rewardID, date
+	user sees/views rewardID, "rewardData"
+	1# -- refer 3 users, "5% discount off bookprice"  - 200 users  0  200
+	2# -- refer 10 users, "5% discount off bookprice" - 250 users  0  250
+	3# -- refer 10 users, "5% discount off bookprice"
+etc...
+
+rewardsDataTBL
+ -contains defined rewards
+  rewardID
+  //refUserCount
+  rewardAction --//# of refUsers
+  rewardBenefit
+  rewardTotalAvail
+  rewardInProcCount
+  rewardExpireDate
+  rewardCurCount
+
+user can only select single/1 only reward
+rewad is greyed when used up
+rewards have a timeframe
+after reward period, rewards are reset
+need to have "complete" all time userRewardTrackingTBL that tracks all users 
+ for all rewards across all time
+
+
+]
+
+[
+ rewards data/tracking section
+ possibly only shown to logged in user
+ -need to have navBar -- menu/link -to the "rewardsUserDataSection"
+
+ show different "tabs" for users/rewards
+
+ byTopReferralUsers
+  userID   referralCount  rewardType
+
+
+ -need to display the rewardType/list as well..
+
+ byRewardType
+ rewardType   userID  referralCount
+
+
+]
+
+[
+userLogin/Password/ForgotPassword
+ -need to have a section/area to login
+ -possibly upper right section of page
+ -need to login/reset passwd as required
+ -in order to refer users, user needs to be logged in/member of site
+ -in order to see/view referralCounts, need to be logged in
+ -in order to
+
+ need to have userType
+ regular/Admin
+ Admin -- gets to access Admin section/page
+ Admin --gets to access CRM section/page
+
+]
+
+
+Admin Page "logic/process" function to handle 
+ the viral/rewards processes
+	-enable/disable users
+	-enable/disable ipAddress for the input "email" user
+	-ipAddress disable should also be performed at the OS/ssh level
+	-etc..
+
+"basic" CRM/Page process
+ to be able to test/oversee 
+ the initial userbase as users signup/join, and complete the userData form
+	track all valid user/email
+	-insert all fields of userDataForm in CRM tbls/db
+	-track user viral/referralID relationships
+	-etc..
+
+
+default/basePage
+-the base url page
+-https://www.testpage.com
+-has the initial/base page/content for the test landingPage/referralID "dialog/form"
+
+the base page kind of looks like:::
+
++========================================================================+
+
+top  header::navBar
+	[this is going to have a horiz/ dropdown menu list]
+
++========================================================================+
+
++========================================================================+
+  "some content Area"
+
++========================================================================+
++========================================================================+
+  "user Call To Action - content Area"
+
++========================================================================+
++========================================================================+
+  referralID/user email dialog
+  ++-- userEmail form/entry
+  ++ submitBTN
+
++========================================================================+
++========================================================================+
+  " User Counter -- (users who've signed up so far) Area"
+
++========================================================================+
+
++========================================================================+
+  "WhoWeAre - content Area"
+  "Feedback - content Area"
+	etc....
++========================================================================+
+
+
+

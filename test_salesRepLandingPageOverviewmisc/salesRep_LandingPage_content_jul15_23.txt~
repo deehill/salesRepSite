@@ -1,0 +1,237 @@
+salesRep_userLandingPage_content_jul15_23.txt
+
+
+::Main Horiontal Menu::
+home   
+-Platform Operation/Goals  -User Overview  /Benefits    -What We Need From You!  -SignUp/Join  -User/Referral Data/Rewards  [-Platform Data -TgtColleges] -About/Contact us  --AssociatedSites [salesRep | bizPartner]
+
+home   tgtStats  Business Overview  Student/Call To Action!   Signup   Work With Us  About Us 
+
+tagline section 
+  snappy tagline
+	cheaper books - better grades!
+	your books at our price!
+	makes cents to buy cheaper books!
+	paying more for the same textbook makes no cents!!
+	beating the bookstores at their own game...
+	  ....your books at our price!
+
+small biz promotion
+ bar/nightclub/restaurant promotion
+
+
+(home)
+top section...
+--need to catch the user's attention..
+ not a bunch of text
+ diagram perhaps...
+ pic...
+ Free textbooks!!
+   (*cmon.. you didn't think there are really free books)
+
+ bags of money.. large/small
+ buying books from us lets you have one of these when you're done!
+ books from us ---> leaves you this!
+ books from them --->> leaves you that!
+
+anybody can sell you textbooks. We're tying to be different. We're the only 
+ operation trying to deliver cheaper books, while giving you ads/deals 
+ from local businesses to stretch your your funds!
+
+  here's why we're doing this, and how it will work
+  why:
+   books for your classes are too expensive and should cost less
+   we think theres a better way
+  the book platform shows you the books you need for the colleges/classes 
+	in the system (~600 largest colleges)
+  books go directly from distributors to you, keeping costs low. we don't 
+	pad for profit
+  you save!
+
+ and here's the how;
+  like almost everything else online, ads from businesss local to 
+	college communities will support the site
+  -businesses are willing to advertise on the platform, "provided":
+   		-we show that users want to join for the books, and 
+		-we show the user population "data" is a "fit" for the 
+		 target customer for the the business
+
+	a win/win for students as well as businesses!
+
+This site/app is focused on giving the student information to 
+ join the operation for getting cheaper books, and to grow the 
+ community by referring other friends/students.
+
+The business who wants to advertise on the platform, should 
+ check out the "bizLink" section for a short overview on what the 
+ project offers Ad partners. More specific information for the 
+  biz partner, can be found in the partner "bizSitePageLink"!
+
+
+possible "timer" counting down day/hr/min/
+possible counter for users joined for waitlist (just email)
+possible counter for users joined for userData (
+possible counter for users joined for Businesses (local/or total)
+
+
+whyus
+-get rid of this.. now in the home/above 
+
+
+
+users
+-more or less get rid of this.
+ expand the home a bit -- few lines..
+	to say -- the system needs the students as well as the local businesses to 
+	 really work.. both will benefit as the process grows
+	the platform serves both users!!
+instead of whyus/users sections..
+ have a Businesses navbar menu item for a short overview of the business 
+  input..
+
+
+tgtStats
+/*
+ -new area... should it be here... or in a sep page off the navBar
+  -display/show the targets the landingpae/project is trying to 
+	hit
+ -need to be in the user's eyesight/face..
+
+														Goals by XX			Current Numbe
+	Number of College Students to sign uu/waitlist
+	Number of Businesses to sign up
+	Number of Students Referring (why this?? is this needed?)
+	
+*/
+
+//Students
+
+
+(Businesses)
+Businesses
+Local Business are key to the success of the TextBook Platform for the college student. The platform 
+ allows the business to advertise to the local college community, not only while the user 
+ is on the site, but also via targeted txt msgs. The businesses are key parts of the process, as the 
+ Ad revenue from the Business, allows the platform to operate, while keeping the price of the 
+ books as cheap as possible.
+
+Check out the business site for more information on Local Businesses joining the platform for 
+ advertising, and how the advertising process helps lower the cost of textbooks for the 
+ college communities. 
+
+
+(Student/Call To Action)
+Call To Action! (How to Help)
+projectNeeds
+
+As a Student reading this (or you're associated with a Student), you have a 
+chance to help provide cheaper textbooks. We need users to signup(join) the 
+site to build the community for the textbook process. The signup process slots 
+the user in the Waitlist. 
+
+
+(Signup)
+signup/register to refer other users
+ rewards for referral is being worked out. It won't be cash! that would add to the 
+ cost of the books.
+ -we might take suggestions from the community for what/how referrals should work 
+ -since we're going to be having advertisers around the community, the referral 
+ process might be a waitlist to allow users to be salesReps.. or to get a slice 
+ of the revs... for the college/over a time frame...
+
+
+
+signup
+Ok!
+By now, we hope you understand why we're trying to build the platform for cheap textbooks, 
+ and you're ready to signup for the waitlist! The following "dialogs" allows you to sign 
+ up to join the "WaitList".
+
+Simply providing the "email" places you on the Waitlist:
+
+Providing your email, as well as being willing to refer others, places you on the Waitlist, but at a higher position.
+
+Providing the email, as well as filling out the userData fields, places you highest of all!
+
+Waitlist process:
+ While we want everyone that signs-up/joins to be able to use the platform to 
+ get their textbooks. The initial process will be based on users who fill out 
+ the data/form in the following manner:
+
+Waitlist category/level
+ -each category will have referer checkbox.. 
+
+  1                User provides email, + referer 
+                    category 1
+  2                User provides email, as well as selects interest in 
+				    being SalesRep to recruit local businesses for Advertising
+					 doesn't matter about referer checkbox - for waitlist placement
+                    category 2 
+  3                User provides email, as well as completes UserData
+					 doesn't matter about referer checkbox - for waitlist placement
+                    category 3
+  4                User provides email to be on waitlist - no referer checked
+                    category 4
+
+
+  1                User provides email, wants to refer other users as well
+                    category 1
+  2                User provides email, as well as selects interest in 
+				    being SalesRep to recruit local businesses for Advertising
+                    category 2
+  3                User provides email, as well as completes UserData
+                    category 3
+  4                User provides email to be on waitlist
+                    category 4
+
+Place in Waitlist by Category
+ Category1
+ Category2
+ Category3
+ Category4
+
+signup -- email dialog + referral checkbox + salesRep checkbox
+ basic email input form -- with referral checkbox
+ does basic clientside validation
+	prior to sending json srvrside
+
+userDataForm + salesRep
+signup -- to also be salesRep (requires the user to have also inserted email)
+ --for this process, this should be disabled if user hasn't entered email
+	-once email is entered/validated the form can be entered...
+	-would need to explain process to user... would this be too confusing..
+
+or.. could have logic simply have a "radio select" process..
+ user selects radio option "X"
+ -the app then displays/processes the category/dialog form..
+ -the process/section is then displayed for user
+ -there would be separate sections/logic for each "category"
+	-process/app/section would have to explain/describe -clearly 
+	 to the user the overall process before selecting the radioBTN/sel
+ -user would only need to select the radioBTN and fill the form/dialog
+ -userData form would need user's email as well.. 
+
+
+ureferral
+ --figure out how/what this should have..
+	-for now, referral, up to X new users moves user to "top" tier 
+	 of being in line to get cheaper books..
+	 -should there be more..
+	 -maybe ask the potential user/community how this should work??
+
+
+
+Work With Us
+Students -- Community/Sales Reps
+Local Biz -- Advertiser/Partners
+
+
+aboutUS
+John Condorodis
+Jennifer Wilson
+Steve Shinn
+
+
+platformsites..  --remove.. combine in the AboutUS
+
+

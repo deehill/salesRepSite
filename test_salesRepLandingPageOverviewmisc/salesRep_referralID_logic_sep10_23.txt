@@ -1,0 +1,81 @@
+
+viral/prelaunch/referral userID
+-need app to allow user to signup/register to be on waitlist/prelist
+-app allows user to signup to "refer" other users to join
+-app would create unique referralID - used/given to other 
+ users to view/signup/join
+-app tracks the "parent" userID/referralID
+-userID/parentID, allows parent/child user relationships to 
+ be tracked
+
+when user/parent signs up
+when user/parent send email to "friend" user, with referralID 
+ passed in the bod/joinEmail
+	joinEmail-- is the email contained in the body of the 
+	email the "parentUser" sends to the new "friend/user" 
+	to join
+	-if the 'friend' is a new user, and doesn't want to 
+	 user the "parent" referralID, new user can simply 
+	 use the 'joinEmailURL' which still has the parent 
+	 referralID, but the friend/user, doesn't have to 
+	 do anything when signing up/joining via the 
+	 "joinEmailURL'
+		https://testlpurl.com/refID=foo123
+	-the 'joinEmailURL' in the body from the parentEmail 
+	 takes the user to the "base/default" page of the 
+	 test landingPageWebApp for the user to read about the 
+	 process, to decide if they want to join/refer other users 
+	 to join.. ie, the viral process of the site
+	-the refID=foo123, would be added to the user, that has the 
+	 refID=foo123 as the userID's referralID...
+	-this allows for tracking....
+
+AdminPage::::
+there needs to be an admin page/process for the admin to see/track the 
+	ongoing growth of the users
+	-as well as which users are contributing more 'child users'
+	-as well as areas/colleges/etc.. of the overall top user growth
+	-list of users who've signed up
+	-list of users who want to be 'beta test'
+	-users who want to 'refer other users'
+	-users who want to get books,etc..
+
+	-track users::
+	-disable user/userID
+	-disable ipAddress
+	--copy Admin functions from other open source webApps
+	
+
+for the viral contributions/rewards
+	-need to have some sort of rewards process...
+	-allow users to 'select' which rewards they want to go for 
+	 based on the number of 'childUsers' the user gets to 
+	 view/visit/join
+	-based on the number of 'childUsers' the user gets to 'refer' 
+	 other users to 'join'...
+
+
+process needs to immeadiately send 'confirm' email to the user 
+	who signs up to join/beta test
+	-confirm email to the user who wants to join/get their books
+	-confirm email to the user who wants to 'join/get their books' 
+	 refer other users...
+	-setup tbl with user referralID as required if user wants to 
+	 refer others..
+
+process should have 'benefits/rewards/rewardTracking' sections to 
+	allow user to track their status...
+
+
+
+
+techStack:::
+ php/javascript/reactjs
+ mysql
+ ubuntu
+ apache
+
+
+
+
+
